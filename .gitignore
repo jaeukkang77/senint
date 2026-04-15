@@ -1,0 +1,49 @@
+# Claude Code
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+
+# IDE
+.vs/
+.vscode/
+
+# Backup and temporary files
+*.orig
+*.bak
+*.tmp
+*.backup
+*.log
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.env
+
+# Build outputs
+dist/
+build/
+*.o
+*.a
+*.so
