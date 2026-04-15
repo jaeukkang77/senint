@@ -1,0 +1,11 @@
+{
+  "name": "senint",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler pages deploy .",
+    "preview": "wrangler pages dev ."
+  },
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  }
+}
