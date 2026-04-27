@@ -3994,6 +3994,10 @@ footer .ft-copy,
   overflow: hidden;
 }
 
+.main--home {
+  min-width: 0;
+}
+
 .visual-area .slide-bg {
   position: relative;
   width: 100%;
