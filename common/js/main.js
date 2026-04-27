@@ -213,8 +213,18 @@ $(function() {
     }, 1000);
 }).call(this);
 
-$(window).on('resize', function() {
-    reinit();
+$(window).on('resize orientationchange', function() {
+    var $slick = $('#visual-area');
+    if (!$slick.hasClass('slick-initialized')) return;
+    var $animated = $slick.find('.slick-track, .slick-slide');
+    $animated.css('transition', 'none');
+    clearTimeout(window._slideResizeTimer);
+    window._slideResizeTimer = setTimeout(function() {
+        $slick.slick('setPosition');
+        requestAnimationFrame(function() {
+            $animated.css('transition', '');
+        });
+    }, 100);
 });
 
 //CANVAS
